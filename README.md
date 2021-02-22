@@ -2,21 +2,21 @@
 
 # 구글 자바 코딩 컨벤션 요약
 
-#2. 소스 파일 기본
+## 2. 소스 파일 기본
 
-###2.1 파일 이름
+### 2.1 파일 이름
 
 - 소스파일 이름은 파일에 포함되는 최고 레벨 클래스이며 대소문자에 구분된다.
 확장자는 .java
 
-###2.2 파일 인코딩
+### 2.2 파일 인코딩
 
 - 소스파일은 UTF-8로 인코딩된다.
 
-###2.3 특수문자
+### 2.3 특수문자
 
 
-###2.3.1 공백 문자 (Whitespace characters)
+### 2.3.1 공백 문자 (Whitespace characters)
 
 line terminator sequence(줄 마침 순열 : 문자 입력의 마지막을 나타내는 순열)
 를 제쳐두고, ASCII horizontal space character (0x20) 이 소스 파일에 나타나는
@@ -25,11 +25,11 @@ line terminator sequence(줄 마침 순열 : 문자 입력의 마지막을 나�
 1. 문자열이나 문자 상수에 포함된 다른 모든 공백 문자는 escape 된다.
 2. 탭 문자는 들여쓰기로 사용되지 않는다.
 
-###2.3.2 특수 escape sequences
+### 2.3.2 특수 escape sequences
 
 special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r', \" , \' , \\ ) 그에 상응하는 8진법(예시 : \012)이나 Unicode escape(예시: \u000a)을 사용하지 않고, 해당 escape sequence 그대로 이용된다.
 
-###2.3.3 Non-ASCII characters ( 아스키 문자가 아닌 문자 )
+### 2.3.3 Non-ASCII characters ( 아스키 문자가 아닌 문자 )
 
 남은 non-ASCII 문자들은, 실제 Unicode 문자나 동등한 Unicode escape(예: \u221e) 가 사용된다. 어떤것을 사용할지는 어떤 선택이 코드를 더욱 읽기 쉽고 이해하기 쉽게 만드느냐에 따라 달라진다, Unicode는 문자 상수 밖에서 escape되고 주석은 권장되지 않아도 그렇다.
 
@@ -76,16 +76,16 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 
 정확히 한 빈줄이 각 구역을 구분한다.   
 
-###3.1 License or copyright information, if present ( 존재하는 라이선스 혹은 저작권 정보 )
+### 3.1 License or copyright information, if present ( 존재하는 라이선스 혹은 저작권 정보 )
 
 라이센스나 저작권 정보가 존재한다면 작성
 
-###3.2 Package statement ( 패키지 선언문 )
+### 3.2 Package statement ( 패키지 선언문 )
 
 **패키지 선언문**은 자동 줄바꿈이 되어있지 않고   
 줄 제한(한줄에 문자 100자 이하) 또한 적용되지 않는다.
 
-###3.3 Import statements ( 불러오기 )
+### 3.3 Import statements ( 불러오기 )
 
 >**3.3.1** No wildcard imports
 >
@@ -112,7 +112,7 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 >
 >정적 중첩 클래스를 위해 정적 불러오기는 하지 않는다.
 > 
-###3.4 Class declartion ( 클래스 선언 )
+### 3.4 Class declartion ( 클래스 선언 )
 
 > 3.4.1 Exactly one top-level class declaration   
 >
@@ -161,7 +161,7 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 
 ## 4.2 Block indentation: +2 spaces
 
-###- 블록 들여쓰기는 공백 2칸
+### - 블록 들여쓰기는 공백 2칸
 
 ## 4.3 One statement per line ( 한 줄에 한 개의 선언문 )  
 
@@ -178,9 +178,9 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 3. 쉘로 붙여넣기를 수행할때 잘려서 붙여넣어질 수도 있는 주석안의 명령문
 
 
-##4.5 Line-wrapping ( 자동 줄 바꿈 )
+## 4.5 Line-wrapping ( 자동 줄 바꿈 )
 
-###4.5.1 Where to break ( 줄을 바꿀 위치 )
+### 4.5.1 Where to break ( 줄을 바꿀 위치 )
 
 1. 줄 바꿈이 할당하는 작업을 하지 않는 연산자에 수행될 경우   
 연산자 나오기 전에 줄 바꿈
@@ -200,7 +200,7 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
             longExpressionInvolving(str);
 
 
-###4.5.2 Indent continuation lines at least +4 spaces ( 줄 바꾼 뒤 들여쓰기는 빈칸 4칸 )
+### 4.5.2 Indent continuation lines at least +4 spaces ( 줄 바꾼 뒤 들여쓰기는 빈칸 4칸 )
 
 자동 줄 바꿈시 들여쓰기는 원래 줄의 4칸 정도를 빈칸으로 할것
 
@@ -226,13 +226,13 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 
 다음과 같은 경우에 **한 개의 빈칸**이 필요
 
-###1. if , for, catch 바로 앞. "(" 열기 전
-###2. } 로 블록을 닫은 후 else, catch 사이   
-###3. 중괄호 { , 블록을 열기 전
+### 1. if , for, catch 바로 앞. "(" 열기 전
+### 2. } 로 블록을 닫은 후 else, catch 사이   
+### 3. 중괄호 { , 블록을 열기 전
 예외 :
 - @someAnnotation({a, b}) 
 - String [][] x = {{"foo"}};
-###4. binary 혹은 ternary 연산자의 양쪽   
+### 4. binary 혹은 ternary 연산자의 양쪽   
 다음에 해당하는 "연산자 같은" symbol 에도 적용
 
 - conjunctive type bound 속의 ampersand(&) : <T extends Foo & Bar>
@@ -241,17 +241,17 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 - lambda expression에서의 -> : (String str) -> str.length();   
 lambda expression? : 간단히 말해 메소드를 하나의 식으로 표현한 것.
   
-###5. "," ":", ";" 다음 혹은 닫는 괄호 ")" 뒤
-###6. double slash "//" 양쪽
-###7. 변수 선언에서 타입과 변수 사이
+### 5. "," ":", ";" 다음 혹은 닫는 괄호 ")" 뒤
+### 6. double slash "//" 양쪽
+### 7. 변수 선언에서 타입과 변수 사이
 
 - Integer num'
 
-###8. 배열 초기화 중괄호 안쪽 (선택사항)
+### 8. 배열 초기화 중괄호 안쪽 (선택사항)
 
 - **new int[] {5, 6}** and **new int { 5, 6 }** are both valid
 
-###9. 타입 주석 사이
+### 9. 타입 주석 사이
 
 - **[]** 과 **...** 사이
 
