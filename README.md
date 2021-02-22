@@ -159,15 +159,15 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 > doSomething();   
 > } catch (Exception e) {}
 
-## 4.2 Block indentation: +2 spaces
+### 4.2 Block indentation: +2 spaces
 
 ### - 블록 들여쓰기는 공백 2칸
 
-## 4.3 One statement per line ( 한 줄에 한 개의 선언문 )  
+### 4.3 One statement per line ( 한 줄에 한 개의 선언문 )  
 
 ### - 각 선언문 끝에 줄 바꿈 포함
 
-## 4.4 Column limit : 100 ( 한 열의 문자 개수 제한 : 100 )
+### 4.4 Column limit : 100 ( 한 열의 문자 개수 제한 : 100 )
 
 문자 개수 제한을 넘는 선언은 줄을 바꿀것
 
