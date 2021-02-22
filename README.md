@@ -226,13 +226,13 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 
 다음과 같은 경우에 **한 개의 빈칸**이 필요
 
-### 1. if , for, catch 바로 앞. "(" 열기 전
-### 2. } 로 블록을 닫은 후 else, catch 사이   
-### 3. 중괄호 { , 블록을 열기 전
+#### 1. if , for, catch 바로 앞. "(" 열기 전
+#### 2. } 로 블록을 닫은 후 else, catch 사이   
+#### 3. 중괄호 { , 블록을 열기 전
 예외 :
 - @someAnnotation({a, b}) 
 - String [][] x = {{"foo"}};
-### 4. binary 혹은 ternary 연산자의 양쪽   
+#### 4. binary 혹은 ternary 연산자의 양쪽   
 다음에 해당하는 "연산자 같은" symbol 에도 적용
 
 - conjunctive type bound 속의 ampersand(&) : <T extends Foo & Bar>
@@ -241,17 +241,17 @@ special escape sequences를 가진 모든 문자는 ('\b', '\t', '\n', '\f', '\r
 - lambda expression에서의 -> : (String str) -> str.length();   
 lambda expression? : 간단히 말해 메소드를 하나의 식으로 표현한 것.
   
-### 5. "," ":", ";" 다음 혹은 닫는 괄호 ")" 뒤
-### 6. double slash "//" 양쪽
-### 7. 변수 선언에서 타입과 변수 사이
+#### 5. "," ":", ";" 다음 혹은 닫는 괄호 ")" 뒤
+#### 6. double slash "//" 양쪽
+#### 7. 변수 선언에서 타입과 변수 사이
 
 - Integer num'
 
-### 8. 배열 초기화 중괄호 안쪽 (선택사항)
+#### 8. 배열 초기화 중괄호 안쪽 (선택사항)
 
 - **new int[] {5, 6}** and **new int { 5, 6 }** are both valid
 
-### 9. 타입 주석 사이
+#### 9. 타입 주석 사이
 
 - **[]** 과 **...** 사이
 
